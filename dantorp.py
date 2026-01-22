@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 URL = "https://dantorpsrestaurang.kvartersmenyn.se/"
 INPUT_FILE = "index.html"
 
-WEEKDAYS = ["MÅNDAG", "TISDAG", "ONSDAG", "TORSDAG", "FREDAG"]
+WEEKDAYS = ["Måndag, "Tisdag", "Onsdag", "Torsdag", "Fredag"]
 
 def clean_text(s):
     s = re.sub(r"\b\d+\s*[:-]?\b", "", s)   # Ta bort prisfragment
